@@ -1,0 +1,244 @@
+main.name = "PS"
+main.lang = "en"
+main.whitelist = [
+ "YOUR_WIFI_SSID",    # Replace with your SSID
+ "YOUR_HOTSPOT_NAME",  # Replace with your HOTSPOT FOR BT DNT GET PWNED
+ "YOUR_SSID",  # Replace with your SSID
+ "YOUR_SHORT_SSID",    # Replace with your SSID
+]
+main.plugins.grid.enabled = true
+main.plugins.grid.report = true
+main.plugins.grid.exclude = [ "YOUR_WIFI_SSID",] # Add any networks to exclude
+
+main.plugins.auto-update.enabled = true
+main.plugins.auto-update.install = true
+main.plugins.auto-update.interval = 1
+
+main.plugins.bt-tether.enabled = true
+main.plugins.bt-tether.devices.ios-phone.enabled = true
+main.plugins.bt-tether.devices.ios-phone.search_order = 1
+main.plugins.bt-tether.devices.ios-phone.mac = "YOUR_MAC_ADDRESS"
+main.plugins.bt-tether.devices.ios-phone.ip = "172.20.10.7"
+main.plugins.bt-tether.devices.ios-phone.netmask = 24
+main.plugins.bt-tether.devices.ios-phone.interval = 1
+main.plugins.bt-tether.devices.ios-phone.scantime = 10
+main.plugins.bt-tether.devices.ios-phone.max_tries = 10
+main.plugins.bt-tether.devices.ios-phone.share_internet = true
+main.plugins.bt-tether.devices.ios-phone.priority = 1
+
+main.plugins.bt-tether.devices.android-phone.enabled = false
+
+main.plugins.fix_services.enabled = true
+
+main.plugins.gdrivesync.enabled = false
+main.plugins.gdrivesync.backupfiles = [ "",]
+main.plugins.gdrivesync.backup_folder = "PwnagotchiBackups"
+
+main.plugins.logtail.enabled = true
+main.plugins.logtail.max-lines = 10000
+
+main.plugins.memtemp.enabled = false
+main.plugins.memtemp.scale = "celsius"
+main.plugins.memtemp.orientation = "horizontal"
+
+main.plugins.onlinehashcrack.enabled = false
+main.plugins.onlinehashcrack.email = ""
+main.plugins.onlinehashcrack.dashboard = ""
+main.plugins.onlinehashcrack.single_files = false
+
+main.plugins.session-stats.enabled = true
+main.plugins.session-stats.save_directory = "/var/tmp/pwnagotchi/sessions/"
+
+main.plugins.webcfg.enabled = true
+
+main.plugins.wpa-sec.enabled = true
+main.plugins.wpa-sec.api_key = "YOUR_API_KEY"
+main.plugins.wpa-sec.api_url = "https://wpa-sec.stanev.org"
+main.plugins.wpa-sec.download_results = true
+
+main.plugins.handshakes-dl.enabled = true
+
+main.plugins.memtemp-plus.enabled = true
+main.plugins.memtemp-plus.scale = "celsius"
+main.plugins.memtemp-plus.orientation = "horizontal"
+main.plugins.memtemp-plus.fields = "mem,cpu,freq,temp"
+main.plugins.memtemp-plus.position = "175,82"
+main.plugins.memtemp-plus.linespacing = 13
+
+main.plugins.wpa-sec-list.enabled = true
+
+main.plugins.aircrackonly.enabled = false
+
+main.plugins.gpio_buttons.enabled = false
+
+main.plugins.gps.enabled = true
+main.plugins.gps.speed = 9600
+main.plugins.gps.device = "/dev/ttyACM0"
+
+main.plugins.pisugar2.enabled = false
+main.plugins.pisugar2.shutdown = 5
+main.plugins.pisugar2.sync_rtc_on_boot = false
+
+main.plugins.ups_hat_c.enabled = false
+main.plugins.ups_hat_c.label_on = true
+main.plugins.ups_hat_c.shutdown = 5
+main.plugins.ups_hat_c.bat_x_coord = 140
+main.plugins.ups_hat_c.bat_y_coord = 0
+
+main.plugins.ups_lite.enabled = false
+
+main.plugins.webgpsmap.enabled = true
+
+main.plugins.wigle.enabled = false
+main.plugins.wigle.api_key = ""
+main.plugins.wigle.donate = false
+
+main.plugins.net-pos.enabled = false
+main.plugins.net-pos.api_key = "test"
+
+main.plugins.IPDisplay.enabled = true
+main.plugins.IPDisplay.skip_devices = [ "lo",]
+
+main.plugins.display-password.enabled = true
+main.plugins.display-password.orientation = "horizontal"
+
+main.plugins.internet-connection.enabled = true
+
+main.plugins.cuff.enabled = false
+main.plugins.cuff.whitelist = ""
+
+main.plugins.hashieclean.enabled = false
+
+main.plugins.better_quickdic.enabled = true
+main.plugins.better_quickdic.face = "(·ω·)"
+main.plugins.better_quickdic.wordlist_folder = "/home/pi/wordlists/"
+main.plugins.better_quickdic.api = ""
+main.plugins.better_quickdic.id = ""
+
+main.plugins.tweak_view.enabled = true
+
+main.plugins.exp.enabled = true
+main.plugins.exp.lvl_x_coord = 156
+main.plugins.exp.lvl_y_coord = 72
+main.plugins.exp.exp_x_coord = 196
+main.plugins.exp.exp_y_coord = 72
+main.plugins.exp.bar_symbols_count = 8
+
+main.plugins.enable_deauth.enabled = true
+
+main.plugins.enable_assoc.enabled = true
+
+main.plugins.instattack.enabled = true
+
+main.plugins.counter.enabled = true
+
+main.plugins.gps_live.enabled = true
+
+main.plugins.gps_sat.enabled = true
+main.plugins.gps_sat.position = "90,83"
+
+main.confd = "/etc/pwnagotchi/conf.d/"
+main.custom_plugin_repos = [
+ "https://github.com/jayofelony/pwnagotchi-torch-plugins/archive/master.zip",
+ "https://github.com/tisboyo/pwnagotchi-pisugar2-plugin/archive/master.zip",
+ "https://github.com/nullm0ose/pwnagotchi-plugin-pisugar3/archive/master.zip",
+ "https://github.com/Sniffleupagus/pwnagotchi_plugins/archive/master.zip",
+ "https://github.com/NeonLightning/pwny/archive/master.zip",
+ "https://github.com/marbasec/UPSLite_Plugin_1_3/archive/master.zip",
+]
+main.custom_plugins = "/usr/local/share/pwnagotchi/custom-plugins/"
+main.plugin.gdrivesync.interval = 1
+
+main.iface = "wlan0mon"
+main.mon_start_cmd = "/usr/bin/monstart"
+main.mon_stop_cmd = "/usr/bin/monstop"
+main.mon_max_blind_epochs = 50
+main.no_restart = false
+main.log.path = "/etc/pwnagotchi/log/pwnagotchi.log"
+main.log.rotation.enabled = true
+main.log.rotation.size = "10M"
+
+ui.display.enabled = true
+ui.display.type = "waveshare_4"
+ui.display.color = "black"
+ui.display.rotation = 180
+
+ui.invert = false
+ui.fps = 0
+ui.font.name = "DejaVuSansMono"
+ui.font.size_offset = 0
+
+ui.faces.look_r = "( ⚆_⚆)"
+ui.faces.look_l = "(☉_☉ )"
+ui.faces.look_r_happy = "( ◕‿◕)"
+ui.faces.look_l_happy = "(◕‿◕ )"
+ui.faces.sleep = "(⇀‿‿↼)"
+ui.faces.sleep2 = "(≖‿‿≖)"
+ui.faces.awake = "(◕‿‿◕)"
+ui.faces.bored = "(-__-)"
+ui.faces.intense = "(°▃▃°)"
+ui.faces.cool = "(⌐■_■)"
+ui.faces.happy = "(•‿‿•)"
+ui.faces.excited = "(ᵔ◡◡ᵔ)"
+ui.faces.grateful = "(^‿‿^)"
+ui.faces.motivated = "(☼‿‿☼)"
+ui.faces.demotivated = "(≖__≖)"
+ui.faces.smart = "(✜‿‿✜)"
+ui.faces.lonely = "(ب__ب)"
+ui.faces.sad = "(╥☁╥ )"
+ui.faces.angry = "(-_-')"
+ui.faces.friend = "(♥‿‿♥)"
+ui.faces.broken = "(☓‿‿☓)"
+ui.faces.debug = "(#__#)"
+ui.faces.upload = "(1__0)"
+ui.faces.upload1 = "(1__1)"
+ui.faces.upload2 = "(0__1)"
+ui.faces.png = false
+ui.faces.position_x = 0
+ui.faces.position_y = 34
+
+ui.web.enabled = true
+ui.web.address = "::"
+ui.web.username = "PS"
+ui.web.password = "PS"
+ui.web.origin = ""
+ui.web.port = 8080
+ui.web.on_frame = ""
+
+ai.enabled = true
+ai.path = "/root/brain.nn"
+ai.laziness = 0.1
+ai.epochs_per_episode = 50
+ai.params.gamma = 0.99
+ai.params.n_steps = 1
+ai.params.vf_coef = 0.25
+ai.params.ent_coef = 0.01
+ai.params.max_grad_norm = 0.5
+ai.params.learning_rate = 0.001
+ai.params.verbose = 1
+
+personality.advertise = true
+personality.deauth = true
+personality.associate = true
+personality.channels = [
+ 1,
+ 2,
+ 3,
+ 4,
+ 7,
+ 9,
+ 10,
+ 11,
+ 64,
+ 104,
+ 108,
+ 112,
+ 124,
+ 128,
+ 153,
+ 157,
+ 161,
+]
+personality.min_rssi = -105
+personality.ap_ttl = 215
+personality.st
