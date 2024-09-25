@@ -60,7 +60,7 @@ the following command:
 _____________
 sudo reboot
 _____________
-6. To use the U-Blox GPS module in your setup, the configuration is preset with the correct values. However, you’ll still need to download
+6.To use the U-Blox GPS module in your setup, the configuration is preset with the correct values. However, you’ll still need to download
 the GPS client by running the following command:
 ____________________
 sudo apt-get install gpsd gpsd-clients
@@ -69,6 +69,7 @@ Once the client is installed, everything else is ready to go. If you're using a 
 ______________
 sudo journalctl -u gpsd
 ______________
+********** you’ll need to reboot through the WebConfig interface, as a regular reboot doesn't always enable the GPS properly. Rebooting through WebConfig ensures the GPS starts working as expected after the green light comes on.**********
 
 7. a.Turn on your iPhone’s Personal Hotspot
 Ensure your iPhone’s personal hotspot is on, and Bluetooth is enabled.
