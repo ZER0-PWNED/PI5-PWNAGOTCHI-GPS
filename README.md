@@ -20,7 +20,7 @@ Write the image to your SD card.
 Drop the configuration file from the GitHub repo into the boot partition of the flashed SD card.
 3. Boot and SSH
 Insert the SD card into your Raspberry Pi 5 and power it on.
-Plug into Ethernet then wait for the IP to show up.
+Plug into Ethernet then wait for the IP on fing to show up.
 SSH into the Pi using: ssh pi@<hostname>.local
 4. Once logged in, open the SSH configuration file by running:
 sudo nano /etc/ssh/sshd_config
