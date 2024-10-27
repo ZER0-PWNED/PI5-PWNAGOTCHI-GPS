@@ -66,6 +66,9 @@ main.plugins.gps.enabled = true
 main.plugins.gps.speed = 9600
 main.plugins.gps.device = "/dev/ttyACM0"
 
+main.plugins.gps_sat.enabled = true
+main.plugins.gps_sat.position = "127,83"
+
 main.plugins.webgpsmap.enabled = true
 
 main.plugins.wigle.enabled = false
