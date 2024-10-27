@@ -142,3 +142,55 @@ Example Layout
 -----------------
 Deauth: 29
 Assocs: 678
+-----------------
+LabeledValue: sattelites
+sattelites.color: 
+255
+
+sattelites.label: 
+SAT:
+
+sattelites.label_font: 
+Small
+sattelites.label_spacing: 
+5
+
+sattelites.text_font: 
+Small
+sattelites.value = "0"
+sattelites.xy: 
+127,83 <---------
+-----------------
+
+Text: memtemp_header
+memtemp_header.color: 
+255
+
+memtemp_header.font: 
+Small
+memtemp_header.max_length: 
+0
+
+VSS["memtemp_header"].png = <bool>
+memtemp_header.value = " mem  cpu temp"
+VSS["memtemp_header"].wrap = <bool>
+VSS["memtemp_header"].wrapper = <NoneType>
+memtemp_header.xy: 
+175,96 <---------
+
+Text: memtemp_data
+memtemp_data.color: 
+255
+
+memtemp_data.font: 
+Small
+memtemp_data.max_length: 
+0
+
+VSS["memtemp_data"].png = <bool>
+memtemp_data.value = " 10%   0%  50c"
+VSS["memtemp_data"].wrap = <bool>
+VSS["memtemp_data"].wrapper = <NoneType>
+memtemp_data.xy: 
+175,86 <---------
+-----------------
