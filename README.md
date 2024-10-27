@@ -114,3 +114,31 @@ Unpairing the device:
 
 remove mac
 Rebooting both the iPhone and Pwnagotchi, and repeat the steps.
+
+
+Plugin HUD Tweak Settings
+Settings Overview
+This section outlines the settings applied for the counter plugin HUD tweak. 
+
+HUD Settings
+
+Label: "Deauth: "
+Font Style: Bold
+Label Spacing: 5
+Text Font: Medium
+Value: "29" (example value)
+Color: White (255)
+Position (xy): 75, 96  <--------- 
+ Assocs Metric Display
+
+Label: "Assocs: "
+Font Style: Bold
+Label Spacing: 5
+Text Font: Medium
+Value: "678" (example value)
+Color: White (255)
+Position (xy): 5, 96  <--------- 
+Example Layout
+-----------------
+Deauth: 29
+Assocs: 678
