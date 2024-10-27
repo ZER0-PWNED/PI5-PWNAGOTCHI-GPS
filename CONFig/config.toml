@@ -50,80 +50,31 @@ main.plugins.memtemp.enabled = false
 main.plugins.memtemp.scale = "celsius"
 main.plugins.memtemp.orientation = "horizontal"
 
-main.plugins.onlinehashcrack.enabled = false
-main.plugins.onlinehashcrack.email = ""
-main.plugins.onlinehashcrack.dashboard = ""
-main.plugins.onlinehashcrack.single_files = false
-
 main.plugins.session-stats.enabled = true
 main.plugins.session-stats.save_directory = "/var/tmp/pwnagotchi/sessions/"
 
 main.plugins.webcfg.enabled = true
 
 main.plugins.wpa-sec.enabled = true
-main.plugins.wpa-sec.api_key = "addkey"
+main.plugins.wpa-sec.api_key = "addkey" 
 main.plugins.wpa-sec.api_url = "https://wpa-sec.stanev.org"
 main.plugins.wpa-sec.download_results = true
 
-main.plugins.handshakes-dl.enabled = true
-
-main.plugins.memtemp-plus.enabled = true
-main.plugins.memtemp-plus.scale = "celsius"
-main.plugins.memtemp-plus.orientation = "horizontal"
-main.plugins.memtemp-plus.fields = "mem,cpu,freq,temp"
-main.plugins.memtemp-plus.position = "175,82"
-main.plugins.memtemp-plus.linespacing = 13
-
 main.plugins.wpa-sec-list.enabled = true
-
-main.plugins.aircrackonly.enabled = false
-
-main.plugins.gpio_buttons.enabled = false
 
 main.plugins.gps.enabled = true
 main.plugins.gps.speed = 9600
 main.plugins.gps.device = "/dev/ttyACM0"
 
-main.plugins.pisugar2.enabled = false
-main.plugins.pisugar2.shutdown = 5
-main.plugins.pisugar2.sync_rtc_on_boot = false
-
-main.plugins.ups_hat_c.enabled = false
-main.plugins.ups_hat_c.label_on = true
-main.plugins.ups_hat_c.shutdown = 5
-main.plugins.ups_hat_c.bat_x_coord = 140
-main.plugins.ups_hat_c.bat_y_coord = 0
-
-main.plugins.ups_lite.enabled = false
-main.plugins.ups_lite.shutdown = 2
-
-main.plugins.webgpsmap.enabled = false
+main.plugins.webgpsmap.enabled = true
 
 main.plugins.wigle.enabled = false
 main.plugins.wigle.api_key = ""
 main.plugins.wigle.donate = false
 
-main.plugins.net-pos.enabled = false
-main.plugins.net-pos.api_key = "test"
 
 main.plugins.IPDisplay.enabled = true
 main.plugins.IPDisplay.skip_devices = [ "lo",]
-
-main.plugins.display-password.enabled = true
-main.plugins.display-password.orientation = "horizontal"
-
-main.plugins.internet-connection.enabled = true
-
-main.plugins.cuff.enabled = false
-main.plugins.cuff.whitelist = ""
-
-main.plugins.hashieclean.enabled = false
-
-main.plugins.better_quickdic.enabled = true
-main.plugins.better_quickdic.face = "(·ω·)"
-main.plugins.better_quickdic.wordlist_folder = "/home/pi/wordlists/"
-main.plugins.better_quickdic.api = ""
-main.plugins.better_quickdic.id = ""
 
 main.plugins.tweak_view.enabled = true
 
@@ -169,8 +120,8 @@ ui.fps = 10
 ui.font.name = "DejaVuSansMono"
 ui.font.size_offset = 0
 
-ui.faces.look_r = "(⊙‿⊙)"
-ui.faces.look_l = "(⊙‿⊙ )"
+ui.faces.look_r = "( ⚆_⚆)"
+ui.faces.look_l = "(☉_⚆)"
 ui.faces.look_r_happy = "( ʘ‿ʘ)"
 ui.faces.look_l_happy = "(ʘ‿ʘ )"
 ui.faces.sleep = "(╯︵╰)"
@@ -185,8 +136,8 @@ ui.faces.grateful = "(^人^)"
 ui.faces.motivated = "(✧◡✧)"
 ui.faces.demotivated = "(⌾︿⌾)"
 ui.faces.smart = "(✪‿✪)"
-ui.faces.lonely = "(︶︹︶)"
-ui.faces.sad = "(╯︵╰ )"
+ui.faces.lonely = "(ب__ب)"
+ui.faces.sad = "(╥☁╥ )"
 ui.faces.angry = "(>︵<)"
 ui.faces.friend = "(♥‿♥)"
 ui.faces.broken = "(✖︿✖)"
@@ -216,7 +167,7 @@ ai.params.n_steps = 5
 ai.params.vf_coef = 0.3
 ai.params.ent_coef = 0.02
 ai.params.max_grad_norm = 1.0
-ai.params.learning_rate = 0.0005
+ai.params.learning_rate = 0.000005
 ai.params.verbose = 1
 
 personality.advertise = true
